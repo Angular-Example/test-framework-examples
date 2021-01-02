@@ -16,6 +16,8 @@ import { DefaultGWithDependencyAPartialComponent } from './components/default-g-
 import { DefaultGWithDependencyBAsyncComponent } from './components/default-g-with-dependency-b-async/default-g-with-dependency-b-async.component';
 import { DefaultCInputOutputSmallerComponent } from './components/default-c-input-output-2/default-c-input-output-smaller/default-c-input-output-smaller.component';
 import { DefaultCInputOutputLargerComponent } from './components/default-c-input-output-2/default-c-input-output-larger/default-c-input-output-larger.component';
+import { ComponentComponent } from './components/default-h-component-inside-host-component/component/component.component';
+import { HostComponent } from './components/default-h-component-inside-host-component/host/host.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { DefaultCInputOutputLargerComponent } from './components/default-c-input
     DefaultGWithDependencyAPartialComponent,
     DefaultGWithDependencyBAsyncComponent,
     DefaultCInputOutputSmallerComponent,
-    DefaultCInputOutputLargerComponent
+    DefaultCInputOutputLargerComponent,
+    ComponentComponent,
+    HostComponent
   ],
   imports: [
     BrowserModule,

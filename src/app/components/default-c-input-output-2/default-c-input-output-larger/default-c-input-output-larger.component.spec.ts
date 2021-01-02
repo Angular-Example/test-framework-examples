@@ -9,11 +9,7 @@ describe('DefaultCInputOutputLargerComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [ DefaultCInputOutputLargerComponent ]
-    })
-    .compileComponents();
-  });
-
-  beforeEach(() => {
+    });
     fixture = TestBed.createComponent(DefaultCInputOutputLargerComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
