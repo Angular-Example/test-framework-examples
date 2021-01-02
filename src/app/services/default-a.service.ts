@@ -5,8 +5,11 @@ import { Observable, of } from 'rxjs';
   providedIn: 'root'
 })
 export class DefaultAService {
+  value: string;
 
-  constructor() { }
+  constructor() {
+    this.value = 'Hello, World!';
+  }
 
   getValue(): string {
     return 'Hello, World!';

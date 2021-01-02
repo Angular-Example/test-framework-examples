@@ -12,6 +12,10 @@ import { DefaultEDomTestingComponent } from './components/default-e-dom-testing/
 import { DefaultFComponentBindingComponent } from './components/default-f-component-binding/default-f-component-binding.component';
 import { DefaultFComponentBindingAutomaticChangeDetectionComponent } from './components/default-f-component-binding-automatic-change-detection/default-f-component-binding-automatic-change-detection.component';
 import { DefaultFComponentBindingDispathEventComponent } from './components/default-f-component-binding-dispath-event/default-f-component-binding-dispath-event.component';
+import { DefaultGWithDependencyAPartialComponent } from './components/default-g-with-dependency-a-partial/default-g-with-dependency-a-partial.component';
+import { DefaultGWithDependencyBAsyncComponent } from './components/default-g-with-dependency-b-async/default-g-with-dependency-b-async.component';
+import { DefaultCInputOutputSmallerComponent } from './components/default-c-input-output-2/default-c-input-output-smaller/default-c-input-output-smaller.component';
+import { DefaultCInputOutputLargerComponent } from './components/default-c-input-output-2/default-c-input-output-larger/default-c-input-output-larger.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +27,11 @@ import { DefaultFComponentBindingDispathEventComponent } from './components/defa
     DefaultEDomTestingComponent,
     DefaultFComponentBindingComponent,
     DefaultFComponentBindingAutomaticChangeDetectionComponent,
-    DefaultFComponentBindingDispathEventComponent
+    DefaultFComponentBindingDispathEventComponent,
+    DefaultGWithDependencyAPartialComponent,
+    DefaultGWithDependencyBAsyncComponent,
+    DefaultCInputOutputSmallerComponent,
+    DefaultCInputOutputLargerComponent
   ],
   imports: [
     BrowserModule,

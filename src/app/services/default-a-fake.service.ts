@@ -6,17 +6,19 @@ import { Observable, of } from 'rxjs';
 })
 export class DefaultAFakeService {
 
+  value: string = 'Hello, World! FAKE';
+
   constructor() { }
 
   getValue(): string {
-    return 'Hello, World!';
+    return 'Hello, World! FAKE';
   }
 
   getObservableValue(): Observable<string> {
-    return of('Hello, World!');
+    return of('Hello, World! FAKE');
   }
 
   getPromiseValue(): Promise<string> {
-    return of('Hello, World!').toPromise();
+    return of('Hello, World! FAKE').toPromise();
   }
 }

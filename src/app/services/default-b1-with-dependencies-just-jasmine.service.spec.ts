@@ -14,7 +14,7 @@ describe('DefaultBService without Angular testing support', () => {
 
   it('#getValue should return faked value from a fakeService', () => {
     defaultBService = new DefaultBService(new DefaultAFakeService());
-    expect(defaultBService.getValue()).toBe('Hello, World!');
+    expect(defaultBService.getValue()).toBe('Hello, World! FAKE');
   });
 
   it('#getValue should return faked value from a fake object', () => {
