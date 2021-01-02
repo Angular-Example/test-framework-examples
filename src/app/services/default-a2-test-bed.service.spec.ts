@@ -2,11 +2,16 @@ import { TestBed } from '@angular/core/testing';
 
 import { DefaultAService } from './default-a.service';
 
+// with Angular TestBed Support
 describe('DefaultAService', () => {
   let defaultAService: DefaultAService;
 
   beforeEach(() => {
+    // - TestBed creates a dynamically-constructed Angular test module that emulates an Angular @NgModule
+    // - TestBed.configureTestingModule() method takes a metadata object that can have most of the
+    //   properties of an @NgModule
     TestBed.configureTestingModule({});
+    // - TestBed.inject - injects the mock into test environment
     defaultAService = TestBed.inject(DefaultAService);
   });
 

@@ -9,15 +9,14 @@ describe('DefaultBService without Angular testing support', () => {
 
   beforeEach(() => {
     const spy = jasmine.createSpyObj('DefaultAService', ['getValue']);
-
     TestBed.configureTestingModule({
       // Provide both the service-to-test and its (spy) dependency
       providers: [
-        DefaultBService,
-        { provide: DefaultAService, useValue: spy }
+        DefaultBService, // service to test
+        { provide: DefaultAService, useValue: spy } // (spy) dependency
       ]
     });
-    // Inject both the service-to-test and its (spy) dependency
+    // Inject both the service-to-test and its (spy) dependency into test environment
     defaultBService = TestBed.inject(DefaultBService);
     defaultAServiceSpy = TestBed.inject(DefaultAService) as jasmine.SpyObj<DefaultAService>;
   });
